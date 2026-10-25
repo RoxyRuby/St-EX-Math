@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8f7ff;
+  --foreground: #1a1a2e;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@keyframes bounce-up {
+  0% { transform: translateY(0); opacity: 1; }
+  60% { transform: translateY(-30px); opacity: 1; }
+  100% { transform: translateY(-60px); opacity: 0; }
+}
+
+.animate-bounce-up {
+  animation: bounce-up 2s ease-out forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
