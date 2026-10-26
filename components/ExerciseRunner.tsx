@@ -195,7 +195,7 @@ export default function ExerciseRunner({ exercise, sectionSlug }: ExerciseRunner
 
       {/* Question */}
       <div className="bg-white rounded-2xl border-2 border-gray-100 p-5">
-        {!isSingleQ && subIdx === 0 && (
+        {!isSingleQ && (
           <p className="text-gray-600 text-sm mb-3 whitespace-pre-line">{exercise.question}</p>
         )}
         <p className="text-gray-800 font-medium text-base leading-relaxed whitespace-pre-line">
